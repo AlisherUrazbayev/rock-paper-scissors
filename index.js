@@ -50,4 +50,29 @@ function playRound(computerChoice, humanChoice) {
   }
 }
 
-playRound(computerChoice, humanChoice);
+function playGame(getHumanChoice, getComputerChoice) {
+  let humanChoice;
+  let computerChoice;
+
+  for (let i = 0; i < 5; i++) {
+    humanChoice = getHumanChoice();
+    computerChoice = getComputerChoice();
+    playRound(computerChoice, humanChoice);
+  }
+
+  console.log(`Human Score: ${humanScore} \nComputer Score: ${computerScore}`);
+  console.log(
+    `The winner is ${
+      humanScore === computerScore
+        ? "no one, it is a tie."
+        : humanScore > computerScore
+        ? "Human"
+        : "Computer"
+    }`
+  );
+}
+
+var humanScore = 0;
+var computerScore = 0;
+
+playGame(getHumanChoice, getComputerChoice);
