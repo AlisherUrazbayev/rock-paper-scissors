@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6b3ff1;
+  font-family: "VT323", monospace, sans-serif;
+  color: #f9eb7a;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  background-color: crimson;
+  font-size: 40px;
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.header .header-text {
+  font-size: 100px;
+}
+
+.header .header-info {
+  font-size: 70px;
+}
+
+.header .header-description {
+  font-size: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-interface {
+  display: flex;
+  gap: 45px;
+  justify-content: space-between;
+}
+
+.log-interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.scores-screen {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+  height: 100px;
+}
+
+.human-score,
+.computer-score,
+.result-screen {
+  border: 2px solid yellow;
+  color: inherit;
+  font-size: 30px;
+  font-family: inherit;
+  text-align: center;
+  background-color: black;
+  height: inherit;
+  width: 150px;
+}
+
+.log-interface > button {
+  font-size: 26px;
+}
+
+.result-screen {
+  width: 430px;
+  height: 100px;
+}
